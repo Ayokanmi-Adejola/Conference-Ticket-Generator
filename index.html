@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Form section -->
+    <div id="form-section">
+      <div class="logo-container">
+        <img src="./assets/images/logo-full.svg" alt="Coding Conf Logo" class="main-logo">
+      </div>
+
+      <h1 style="text-align: center;">Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <p style="text-align: center;">Secure your spot at next year's biggest coding conference.</p>
+
+      <div class="form-container">
+        <form id="ticket-form" novalidate>
+          <!-- Avatar Upload -->
+          <div class="form-group">
+            <label for="avatar">Upload Avatar</label>
+            <div id="upload-area" class="upload-area">
+              <div class="upload-icon">
+                <img src="./assets/images/icon-upload.svg" alt="Upload Icon">
+              </div>
+              <div class="upload-text">Drag and drop or click to upload</div>
+              <p class="hint">Upload your photo (JPG or PNG, max size: 500KB).</p>
+              <input type="file" id="avatar" name="avatar" accept="image/jpeg, image/png" class="visually-hidden">
+            </div>
+            <div id="avatar-preview" class="avatar-preview"></div>
+            <div id="avatar-error" class="error-message">Please upload a valid image file (JPG or PNG, max size: 500KB).</div>
+          </div>
+
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <div id="fullname-error" class="error-message">Please enter your full name.</div>
+          </div>
+
+          <!-- Email Address -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            <div id="email-error" class="error-message">Please enter a valid email address.</div>
+          </div>
+
+          <!-- GitHub Username -->
+          <div class="form-group">
+            <label for="github">GitHub Username</label>
+            <input type="text" id="github" name="github" placeholder="@yourusername" required>
+            <div id="github-error" class="error-message">Please enter your GitHub username.</div>
+          </div>
+
+          <button type="submit" class="btn">Generate My Ticket</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Ticket section (hidden initially) -->
+    <div id="ticket-section" class="ticket-container">
+      <h2 style="text-align: center;">Congrats, <span id="ticket-fullname"></span>! Your ticket is ready.</h2>
+      <p style="text-align: center;">We've emailed your ticket to <span id="ticket-email"></span> and will send updates in the run up to the event.</p>
+
+      <div class="ticket">
+        <div class="ticket-header">
+          <img src="./assets/images/logo-full.svg" alt="Coding Conf Logo" class="ticket-logo">
+        </div>
+        <div class="ticket-body">
+          <div class="avatar-container">
+            <img id="ticket-avatar" src="#" alt="User Avatar">
+          </div>
+          <div class="ticket-info">
+            <div class="ticket-name" id="display-fullname"></div>
+            <div class="ticket-username">
+              <img src="./assets/images/icon-github.svg" alt="GitHub" class="github-icon">
+              <span id="display-github"></span>
+            </div>
+          </div>
+        </div>
+        <div class="ticket-footer">
+          <div class="event-name">Coding Conf</div>
+          <div class="event-details">Jan 31, 2025 / Austin, TX</div>
+        </div>
+      </div>
+      <div class="squiggly-line bottom">
+        <img src="./assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="Decorative line">
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ayokanmi Adejola</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
