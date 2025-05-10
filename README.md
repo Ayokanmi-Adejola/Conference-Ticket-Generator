@@ -53,8 +53,8 @@ The Conference Ticket Generator is a front-end web application that allows users
 
 ### Links
 
-- Solution URL: [GitHub Repository]()
-- Live Site URL: [Live Demo]()
+- Solution URL: [GitHub Repository](https://github.com/Ayokanmi-Adejola/Conference-Ticket-Generator)
+- Live Site URL: [Live Demo](https://ayokanmi-adejola.github.io/Conference-Ticket-Generator/)
 
 ## Technical Details
 
