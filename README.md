@@ -2,18 +2,7 @@
 
 This is a solution to the [Conference ticket generator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/conference-ticket-generator-oq5gFIU12w). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Table of contents
 
-- [Overview](#overview)
-  - [Features](#features)
-- [Usage](#usage)
-- [Links](#links)
-- [Technical Details](#technical-details)
-  - [Built With](#built-with)
-- [Development](#development)
-  - [Installation](#installation)
-  - [Running Locally](#running-locally)
-- [Author](#author)
 
 ## Overview
 
@@ -51,10 +40,6 @@ The Conference Ticket Generator is a front-end web application that allows users
 3. View your personalized conference ticket
 4. The ticket information is displayed and can be saved or shared
 
-### Links
-
-- Solution URL: [GitHub Repository](https://github.com/Ayokanmi-Adejola/Conference-Ticket-Generator)
-- Live Site URL: [Live Demo](https://ayokanmi-adejola.github.io/Conference-Ticket-Generator/)
 
 ## Technical Details
 
